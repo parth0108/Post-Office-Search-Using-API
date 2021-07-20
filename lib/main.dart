@@ -110,13 +110,18 @@ class _MyHomePageState extends State<MyHomePage> {
                     );
                   },
                 ),
-                TextField(
-                  controller: ctrl,
-                  keyboardType: TextInputType.number,
-                  decoration: InputDecoration(
-                      border: InputBorder.none,
-                      labelText: 'Enter Name',
-                      hintText: 'Enter Your Name'
+                Container(
+                  padding: EdgeInsets.all(20),
+                  color: Colors.deepPurple,
+                  margin: EdgeInsets.all(20),
+                  child: TextField(
+                    controller: ctrl,
+                    keyboardType: TextInputType.number,
+                    decoration: InputDecoration(
+                        border: InputBorder.none,
+                        labelText: 'Enter Name',
+                        hintText: 'Enter Your Name'
+                    ),
                   ),
                 ),
                  SizedBox(height: 30,),
@@ -132,7 +137,7 @@ class _MyHomePageState extends State<MyHomePage> {
                      width: 100,
                      color: Colors.green,
                      child: Text('submit'))),
-
+              SizedBox(height: 20 ,)
 
               ],
             ),
